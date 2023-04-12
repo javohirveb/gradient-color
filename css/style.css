@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #8a6cff;
+}
+
+.wrapper {
+   width: 450px;
+   padding: 25px;
+   border-radius: 7px;
+   background: #fff;
+}
+
+.wrapper .gradient-box {
+   width: 100%;
+   height: 220px;
+   border-radius: 7px;
+   background: linear-gradient(to right, #5665e9, #a271f8);
+}
+
+.wrapper .row {
+   display: flex;
+   margin: 20px 0;
+   justify-content: space-between;
+}
+
+.row :where(column, button) {
+   width: calc(100% / 2 - 12px);
+}
+
+.options p {
+   font-size: 1.12rem;
+   margin-bottom: 8px;
+}
+
+.options .select-box {
+   border-radius: 5px;
+   padding: 10px 15px;
+   border: 1px solid #aaa;
+}
+
+.select-box select {
+   width: 100%;
+   border: none;
+   outline: none;
+   font-size: 1.12rem;
+   background: none;
+}
+
+.options .colors {
+   margin-left: 60px;
+}
+
+.colors input {
+   height: 41px;
+}
+
+.colors input:last-child {
+   margin-left: 6px;
+}
+
+.wrapper textarea {
+   width: 100%;
+   color: #333;
+   border-radius: 5px;
+   resize: none;
+   font-size: 1.05rem;
+   border: 1px solid #ccc;
+   padding: 10px 15px;
+}
+
+.buttons button {
+   color: #fff;
+   cursor: pointer;
+   padding: 15px 0;
+   font-size: 1.09rem;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   margin: 0 0 -15px;
+}
+
+.buttons .refresh {
+   background: #6c757d;
+}
+
+.buttons .copy {
+   background: #8a6cff;
+}
+
+@media only screen and (max-width: 550px) {
+   .wrapper {
+      width: 100%;
+      height: 100vh;
+   }
+
+   .options .select-box {
+      padding: 5px 10px;
+   }
+
+   .options .colors {
+      margin-left: 10px;
+   }
+
+   .select-box select {
+      font-size: 0.92rem;
+   }
+
+   .wrapper textarea {
+      font-size: 0.85rem;
+   }
+
+   .buttons button {
+      padding: 15px 0;
+      font-size: 0.89rem;
+      margin: 0 0 -15px;
+   }
+}
